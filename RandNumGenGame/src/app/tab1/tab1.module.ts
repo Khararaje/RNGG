@@ -11,20 +11,26 @@ import {NavController } from '@ionic/angular';
     IonicModule,
     CommonModule,
     FormsModule,
-    RouterModule.forChild([{ path: '', component: Tab1Page }])
+    RouterModule.forChild([{ path: '', component: Tab1Page }]),
+    Component,
+    Tab1PageModule,
+    Tab1Page
+    
   ],
-  declarations: [Tab1Page]
+  declarations: [Tab1Page, Tab1PageModule]
 })
 @Component({
   selector: "page-home",
-  templateUrl: "tabs.page.html" //home.html
+  templateUrl: "tab1.page.html" //home.html
 })
 export class Tab1PageModule {
   randInt;
+  answer;
   constructor(public navCtrl: NavController){
 
   }
   getRand(){
     this.randInt = Math.floor(Math.random() * 10)
+    this.answer = Math.floor(Math.random() * 10)
     }
 }
