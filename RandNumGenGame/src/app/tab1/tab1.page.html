@@ -6,20 +6,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <ion-card class="welcome-card">
+<ion-content padding>
+    <ion-card class="Instructions">
       <img src="/assets/shapes.svg" alt="" />
       <ion-card-header>
         <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
+        <ion-card-title>Welcome to Random Number Guessing Game</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+        <p>When you're ready to start, you'll want to start by clicking the button then enter in a guess between 1 and 10.</p>
       </ion-card-content>
     </ion-card>
     <ion-list lines="none">
       <ion-list-header>
-        <ion-label>Resources</ion-label>
+        <ioninput autofocus="true" clearinput="true" inputmode="numeric" mode="Number" aria-placeholder="Enter a number" aria-required="true" type="number">Resources</ioninput>
       </ion-list-header>
       <ion-item href="https://ionicframework.com/docs/">
         <ion-icon slot="start" color="medium" name="book"></ion-icon>
