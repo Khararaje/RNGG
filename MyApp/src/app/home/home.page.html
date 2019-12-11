@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Random Number Generator Game 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2 style="text-align: center; background-color: aquamarine;">Welcome to Random Number Guessing Game</h2>
+  <ion-header class="ion-header instructions">Getting started: </ion-header>
+  <ion-header class="subtitle">When you're ready to start, you'll want to start by clicking the button then enter in a guess between 1 and 10; Follwed by Compare to see results.</ion-header>
+  
+  <button class="ion-button" (click)="generate()" >Start</button>
+
+  <ion-label> Good Luck! </ion-label>
+  <ion-input pattern="[0-9]+" min="{{number.min}}" max="{{number.max}}" placeholder="Enter guess here.." type="number" [(ngModel)]="myval">   </ion-input>
+  
+  <ion-item >Your guess was: {{myval}} </ion-item>
+
+  <button class="ion-button" (click)="compare()">Compare</button>
+    
+
+</ion-content>
+<script>
+ onkeydown(event){
+   if (event.key === "Enter"){
+     alert("hit");
+   }
+ }
+</script>
