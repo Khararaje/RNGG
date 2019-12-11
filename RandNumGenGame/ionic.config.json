@@ -1,7 +1,0 @@
-{
-  "name": "RandNumGenGame",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
